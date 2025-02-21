@@ -6,7 +6,7 @@ from datetime import datetime
 
 #Configuração o logger para registro em um arquivo .txt
 logging.basicConfig(
-    filename='C:\\Users\\USER\\Desktop\\DIO git e github\\bankup\\log.txt',
+    filename='C:\\Users\\PICHAU\\Desktop\\BankUP\\log.txt',
     filemode='a',
     level=logging.INFO,
     format='%(asctime)s - %(message)s',
