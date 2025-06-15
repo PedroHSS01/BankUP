@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BankUP</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/12417/12417356.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="static\home.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Tela Principal -->
+        <div class="form-box dashboard">
+            <h1>Bem-vindo ao BankUP, <span id="username">{Usuário}</span>!</h1>
+            <div class="menu">
+                <button class="btn" id="depositarBtn">
+                    <i class='bx bx-wallet'></i>
+                    Depositar
+                </button>
+                <button class="btn" id="sacarBtn">
+                    <i class='bx bx-money-withdraw'></i>
+                    Sacar
+                </button>
+                <button class="btn" id="extratoBtn">
+                    <i class='bx bx-receipt'></i>
+                    Extrato
+                </button>
+                <button class="btn" id="transferirBtn">
+                    <i class='bx bx-transfer'></i>
+                    Transferir
+                </button>
+                <button class="btn" id="sairBtn">
+                    <i class='bx bx-log-out'></i>
+                    Sair
+                </button>
+            </div>
+            <div class="conversion-box">
+                <div class="modea-real" id="dolar">
+                    <span class="moeda-nome">Dólar</span>
+                    <span class="moeda-valor">Carregando...</span>
+                </div>
+                <div class="modea-real" id="euro">
+                    <span class="moeda-nome">Euro</span>
+                    <span class="moeda-valor">Carregando...</span>
+                </div>
+                <div class="modea-real" id="bitcoin">
+                    <span class="moeda-nome">Bitcoin</span>
+                    <span class="moeda-valor">Carregando...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 BankUP. Todos os direitos reservados.</p>
+        <p>Contato: 2pedrohss@gmail.com</p>
+    </footer>
+
+    <script src="static\home.js"></script>
+
+</body>
+</html>

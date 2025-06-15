@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #820AD1, #FF6600);
+    flex-direction: column;
+}
+
+.container {
+    position: relative;
+    width: 850px;
+    height: 490px;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    margin: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+.form-box.dashboard {
+    text-align: left;
+}
+
+.form-box.dashboard h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-self: flex-start;
+}
+
+.conversion-box { 
+    position: absolute;
+    right: 30px;
+    top: 135px;
+    width: 280px;
+    height: 245px;
+    background: #820AD1;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    border: 1px solid #fff;
+}
+                                           /* Estou trabalhando aqui agora 20/04 */
+.modea-real {
+    width: 100%;
+    height: 60px;
+    background-color:#FF6600;
+    border-radius: 8px;
+    border: 1px solid #820AD1;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.moeda-nome {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.moeda-valor {
+    font-size: 16px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 15px 30px;
+    background-color: #820AD1;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 1.3s ease;
+    width: 200;
+}
+
+.btn:hover {
+    background-color: #FF6600;
+}
+
+.btn i {
+    font-size: 1.2rem;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        width: 90%;
+        height: calc(100vh - 40px);
+        border-radius: 20px;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .form-box.dashboard h1 {
+        font-size: 2rem;
+        top: 10px;
+        left: 10px;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}

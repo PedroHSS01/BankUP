@@ -1,32 +1,29 @@
+# 🏦 Sistema bancário simplificado.💰
 
-# 🏦 Sistema bancário simplificado em Python, com histórico detalhado das transações.💰
+O objetivo do projeto é desenvolver um sistema bancário simples, aplicando métodos e ferramentas úteis para um bom desempenho.  A fim de treinar e aplicar programação em um projeto real.
+
+Um sistema bancário funcional desenvolvido como evolução de um projeto acadêmico da DIO. Partindo de um desafio escolar que rodava apenas no terminal, decidi expandir o projeto para um sistema real. 
 
 # Funcionalidades ⚙️
+| Funcionalidade               | Descrição                                                                 | Tecnologia Utilizada                     |
+|------------------------------|--------------------------------------------------------------------------|------------------------------------------|
+| **Autenticação de Usuários**  | Cadastro e login com senhas hasheadas (Armazenamento seguro no banco).    | `argon2` + `Flask session`               |
+| **Gestão de Saldo**           | Consulta, depósito e saque (com atualização em tempo real no MySQL).      | `mysql-connector-python` + `Flask`       |
+| **Cotações de Moedas**        | Conversão de valores com base em cotações atualizadas (Dólar, Euro, BTC). | `requests` (API externa)                 |
+| **Transações Seguras**        | Operações validadas e registradas no banco de dados.                      | MySQL + Rotas protegidas (`Flask`)       |
+| **API RESTful**               | Endpoints para integração com frontend ou aplicativos móveis.             | `Flask` + `Flask-CORS`                   |
+| **Variáveis de Ambiente**     | Configuração segura de credenciais (Banco de dados e chaves API).         | `python-dotenv`                          |
 
-- Criação de perfis de clientes com informações pessoais.
-- Abertura de novas contas bancárias vinculadas a clientes existentes.
-- Realização de depósitos e saques.
-- Implementação de limites para transações.
-- Verificação do saldo atual de uma conta.
-- Visualização detalhada de todas as transações.
+## 🛠 Tecnologias e Bibliotecas Destacadas
 
-
-
-# Estrutura do Código 🧬
-
-`Cliente:` Representa um cliente com seus dados pessoais e contas. 
-
-`Conta:` Representa uma conta bancária com funcionalidades como saldo, transações e limites.
-
-`ContaCorrente:`  Um tipo de conta especializado com limites de saque e cheque especial.
-
-`Historico:` Gerencia o histórico de transações de uma conta.
-
-`Transacao:` Uma classe base abstrata para transações.
-
-`Saque, Deposito:`Subclasses concretas de `Transacao` representando operações de saque e depósito.
+| Biblioteca/Pacote         | Finalidade                                      | Destaque no Projeto                                                                 |
+|---------------------------|------------------------------------------------|------------------------------------------------------------------------------------|
+| **Flask**                 | Framework web para construir a API              | Rotas, sessões de usuário (`session`), respostas JSON (`jsonify`) e templates (`render_template`) |
+| **Flask-CORS**            | Permitir requisições entre domínios diferentes  | Integração com frontends (React, Angular, etc.)                                    |
+| **mysql-connector-python**| Conexão com o banco de dados MySQL             | Armazenamento de usuários, saldos e transações                                     |
+| **argon2-cffi** (via `argon2`)| Hash seguro de senhas                     | **Proteção** contra vazamentos        |
+| **python-dotenv**         | Gerenciamento de variáveis de ambiente         | Armazena credenciais do banco de dados fora do código (`.env`)                     |
+| **requests** (implícito em `moedas.py`)| Requisições HTTP para APIs externas | Obter cotações de dólar, euro e Bitcoin (BTC)                                      |
 
 
-# Aprendizados 🧠
-
-Neste projeto, tive a oportunidade de aprofundar meus conhecimentos em Python, desenvolvendo um sistema bancário simples que demonstra minha compreensão de POO e boas práticas de programação. A utilização de bibliotecas como datetime e logging permitiu criar um código eficiente e bem estruturado. Identifiquei a necessidade de implementar um banco de dados e mecanismos de segurança para tornar o sistema mais robusto e escalável.
+# 💻 Arquitetura

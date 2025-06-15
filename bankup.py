@@ -183,7 +183,7 @@ class Deposito(Transacao):
             conta.historico.adicionar_transacao(self)
 
 #Boas vindas ao usúario do banco!
-print('Bem-vindo(a) ao Pedrocoin $')
+print('Bem-vindo(a) ao bankup $')
 
 #"Tela" de Menu do banco
 def menu():

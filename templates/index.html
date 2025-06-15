@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BankUP</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/12417/12417356.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="static\style.css">
+</head>
+<body>
+    <div class="container"> 
+        <div class="form-box login">
+            <form id="loginForm">
+                <h1>Acesse sua conta</h1>
+                <div class="input-box">
+                    <input type="text" id="loginCpf" placeholder="CPF" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="loginSenha" placeholder="Senha" required>
+                    <i class='bx bxs-lock'></i>
+                </div>
+                <button type="submit" class="btn">Acessar</button>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <form id="registerForm">
+                <h1>Abrir Conta</h1>
+                <div class="input-box">
+                    <input type="text" id="registerCpf" placeholder="CPF" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="registerNome" placeholder="Nome Completo" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="registerSenha" placeholder="Senha" required>
+                    <i class='bx bxs-lock'></i>
+                </div>
+                <button type="submit" class="btn">Cadastrar</button>
+            </form>
+        </div>
+        <!-- Toggle entre Login e Cadastro -->
+        <div class="toggle-box">
+            <div class="toggle-panel toggle-left">
+                <h1>Abra Sua Conta</h1>
+                <button class="btn register-btn">Cadastrar</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+                <h1>Já Tenho Uma Conta</h1>
+                <button class="btn login-btn">Acessar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="static\script.js"></script>
+</body>
+</html>
