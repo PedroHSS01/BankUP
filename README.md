@@ -27,3 +27,5 @@ Um sistema bancário funcional desenvolvido como evolução de um projeto acadê
 
 
 # 💻 Arquitetura
+
+<img src="https://github.com/PedroHSS01/BankUP/blob/main/static/img/arq.png">
