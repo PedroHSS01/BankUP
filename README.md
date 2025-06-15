@@ -1,4 +1,4 @@
-# 🏦 Sistema bancário simplificado.💰
+# [Prévia] 🏦 Sistema bancário simplificado.💰
 
 O objetivo do projeto é desenvolver um sistema bancário simples, aplicando métodos e ferramentas úteis para um bom desempenho.  A fim de treinar e aplicar programação em um projeto real.
 
