@@ -1,10 +1,10 @@
 from flask import Flask, request, jsonify, render_template, session, redirect, url_for
 from datetime import datetime
-from conexao_db import conectar, fechar_conexao
-from senhas import inserir_usuario, verificar_senha, atualizar_saldo
+from bankup.conexao_db import conectar, fechar_conexao
+from bankup.senhas import inserir_usuario, verificar_senha, atualizar_saldo
 from mysql.connector import Error as MySQLError
 from flask_cors import CORS
-from moedas import obter_cotacoes
+from bankup.moedas import obter_cotacoes
 
 app = Flask(__name__)
 CORS(app)

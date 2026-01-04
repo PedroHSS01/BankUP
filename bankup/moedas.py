@@ -1,4 +1,4 @@
-from requisicoes import ValorDolar, ValorEuro, ValorBTC
+from .requisicoes import ValorDolar, ValorEuro, ValorBTC
 import json
 
 def obter_cotacoes():
@@ -19,4 +19,4 @@ def obter_cotacoes():
 
 if __name__ == "__main__":
     cotacoes = obter_cotacoes()
-    print(json.dumps(cotacoes)) 
+    print(json.dumps(cotacoes))

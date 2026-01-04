@@ -1,5 +1,5 @@
 from argon2 import PasswordHasher
-from conexao_db import conectar, fechar_conexao
+from .conexao_db import conectar, fechar_conexao
 import mysql.connector
 
 # Instância do PasswordHasher

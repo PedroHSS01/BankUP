@@ -29,3 +29,21 @@ Um sistema bancário funcional desenvolvido como evolução de um projeto acadê
 # 💻 Arquitetura
 
 <img src="https://github.com/PedroHSS01/BankUP/blob/main/static/img/arq.png">
+
+---
+
+## Estrutura de pastas atualizada ✅
+
+- `app.py` — entrypoint do Flask (mantido na raiz)
+- `bankup/` — pacote com módulos Python (conexao_db, senhas, moedas, requisicoes, etc.)
+- `templates/` — arquivos HTML usados pelo Flask
+- `static/` — CSS, JS e imagens
+- `tamplates/` foi renomeada para `tamplates_deprecated/` (mantida apenas para compatibilidade histórica)
+
+### Como executar
+
+1. Copie `.env.example` para `.env` e preencha as variáveis.
+2. Instale dependências: `pip install -r requirements.txt`
+3. Rode: `python app.py` ou `flask run`
+4. Acesse: `http://127.0.0.1:5000/`
+
