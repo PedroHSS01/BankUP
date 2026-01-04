@@ -7,6 +7,4 @@ __all__ = [
     "senhas",
     "moedas",
     "requisicoes",
-    "bankup",
-    "bankup2",
 ]
